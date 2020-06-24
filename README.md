@@ -1,5 +1,6 @@
 # Explore Bikeshare Data
-
+<img src="https://imgnews.pstatic.net/image/030/2017/06/13/0002616522_001_20170613165911863.jpg" width="300px">
+<br>
 This project is exploring data related to bike share systems for three major cities in the United States-Chicago, New York City, and Washington.
 
 ### What software do I use
@@ -10,10 +11,7 @@ This project is exploring data related to bike share systems for three major cit
 ### Data 
 - Given : Bike share data for Chicago, New York City, Washington from January to June in 2017
 - Created : Show statistical dataset.
-	* example : <br>
-
-	<img src="img/sample_data_stat.png" width="500px">
-
+	
 ### Files used
 - Program file
 	* bikeshare.py
