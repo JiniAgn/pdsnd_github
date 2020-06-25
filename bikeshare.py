@@ -296,10 +296,10 @@ def display_raw_data(df):
     
     if user_resp != 'yes' and user_resp != 'no':
         print("......I don't know you want to see or not.\n")
-    print("Data size is "+str(len(df)))    
+    print("Data size is {}".format(len(df)))    
     while user_resp == 'yes':
         if i > len(df)-1:
-            print("You already see all "+ str(len(df)) +" datas")
+            print("You already see all {} datas".format(len(df)) +)
             break
         else :
             print("\n")
