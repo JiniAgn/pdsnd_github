@@ -280,6 +280,34 @@ def user_stats(df):
     print("\n(This took %s seconds.)" % round(time.time() - start_time,5))
 
 
+def display_raw_data(df):
+    """ Displays raw data """
+    
+    msg_ask = "Would you like to see raw data?(Yes/No)"
+    msg_more = "Do you want to see more 5 lines of raw data?(Yes/No)"
+    
+    c_title = "Display Raw Data"
+    space_cnt = display_stats_category(c_title)
+    
+    i = 0
+    j = 5
+    
+    user_resp = input(msg_ask).lower()
+    
+    if user_resp != 'yes' and user_resp != 'no':
+        print("......I don't know you want to see or not.\n")
+    print("Data size is "+str(len(df)))    
+    while user_resp == 'yes':
+        if i > len(df)-1:
+            print("You already see all "+ str(len(df)) +" datas")
+            break
+        else :
+            print("\n")
+            print(df.iloc[i:j])
+            user_resp = input(msg_more).lower()
+            i = j
+            j += 5
+
 
 def main():
     while True:
@@ -290,6 +318,7 @@ def main():
             station_stats(df)
             trip_duration_stats(df)
             user_stats(df)
+            display_raw_data(df)
             
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
