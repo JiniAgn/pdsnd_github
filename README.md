@@ -11,6 +11,10 @@ This project is exploring data related to bike share systems for three major cit
 ### Data 
 - Given : Bike share data for Chicago, New York City, Washington from January to June in 2017
 - Created : Show statistical dataset.
+	* The most frequent times of travel
+	* The most popular station and trip
+	* Trip duration
+	* User Type
 	
 ### Files used
 - Program file
