@@ -289,8 +289,8 @@ def display_raw_data(df):
     c_title = "Display Raw Data"
     space_cnt = display_stats_category(c_title)
     
-    i = 0
-    j = 5
+    start_row = 0
+    next_start_row = 5
     
     user_resp = input(msg_ask).lower()
     
@@ -303,10 +303,10 @@ def display_raw_data(df):
             break
         else :
             print("\n")
-            print(df.iloc[i:j])
+            print(df.iloc[start_row:next_start_row])
             user_resp = input(msg_more).lower()
-            i = j
-            j += 5
+            start_row = next_start_row
+            next_start_row += 5
 
 
 def main():
